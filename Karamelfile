@@ -1,0 +1,6 @@
+dependencies: 
+  - recipe: zookeeper::install
+  - recipe: zookeeper::default
+    local:  
+      - zookeeper::install
+

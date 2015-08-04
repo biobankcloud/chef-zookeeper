@@ -14,6 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+libpath = File.expand_path '../../../kagent/libraries', __FILE__
+require File.join(libpath, 'default')
+
+
 if node[:zookeeper][:use_java_cookbook] == true
   include_recipe 'java::default'
 else

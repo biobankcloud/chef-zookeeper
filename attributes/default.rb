@@ -7,7 +7,7 @@ default[:zookeeper][:install_dir] = '/opt/zookeeper'
 default[:zookeeper][:use_java_cookbook] = true
 
 # One of: 'upstart', 'runit', 'exhibitor'
-default[:zookeeper][:service_style] = 'runit'
+default[:zookeeper][:service_style] = 'systemd'
 
 default[:zookeeper][:config] = {
   clientPort: 2181,
